@@ -1,0 +1,27 @@
+table {
+    height: 150px;
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+th.left {
+    width: 50%; 
+    background-color: rgb(241, 110, 239); 
+    border: 2px solid black; 
+    text-align: left; 
+    border-right-color: gray;
+}
+
+th.right {
+    width: 50%; 
+    background-color: rgb(255, 251, 142);
+    border: 2px solid black; 
+    text-align: left; 
+    border-left-color: gray;
+}
+
+@media screen and (max-width: 800px) {
+    table {
+        height: 50px; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
